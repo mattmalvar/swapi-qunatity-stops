@@ -1,0 +1,28 @@
+<html>
+<title>Cálculo de Paradas - Swapi</title>
+<head>
+<link rel="stylesheet" type="text/css" href="design.css">
+<script src="Starship.js"></script>
+<script src="RequestService.js"></script>
+<script src="StarshipController.js"></script>
+</head>
+<body>
+<h3>Cálculo de paradas das Espaçonaves</h3>
+
+<p id="mensagem"></p>
+
+<input id="distancia" type="number" placeholder="Distância (MGLT)..." min="0"/>
+<button  id="calcular" >Calcular</button>
+<table >
+<thead>
+  <tr>
+    <th>Espaçonave</th>
+    <th>Qtd. Paradas</th>
+  </tr>
+ </thead>
+ <tbody id="tableDados">
+ </tbody>
+</table>
+
+</body>
+</html>
