@@ -1,6 +1,8 @@
 # swapi-qunatity-stops
 Calculating quantity of stops a starship needs
 
+**Linguagem**: Vanilla JS (JavaScript)
+
 O sistema é composto de 5 arquivos:
 
 **desing.css** - Configuração da parte visual
