@@ -12,20 +12,20 @@ class Starship{
   getParadas(distancia){
 	  let mglt = this.mglt;
 	  let consumo = this._convertConsumable();
-	  if(!mglt || !consumo){
+	  if(!mglt || mglt === "unknown" || !consumo){
 		  return null;
 	  }
 	  let horas = distancia / mglt;
 	  let paradas = horas / consumo;
 	  
-	  return paradas.toFixed();
+	  return Math.trunc(paradas);
   }
   _convertConsumable(){
 	  let consum = this.consumables;
 	  let horas = null;
 	  let tempo;
 	  let periodo;
-	     if (!consum) {
+	     if (!consum || consum === "unknown") {
             return null;
         }
         [tempo,periodo] = consum.split(" ");

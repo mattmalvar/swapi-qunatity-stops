@@ -1,11 +1,19 @@
 class RequestService{
-  constructor() {
-	   this.getRequest("https://swapi.co/api/starships/",(retorno)=>{
+    constructor(url = "https://swapi.co/api/starships/") {
+	   this.getRequest(url,(retorno)=>{
 		 this.data = retorno.results;
+		 this.previous = retorno.previous;
+		 this.next = retorno.next;
 	 });
   }
   get getStarships(){
 	  return this.data;
+  }
+  get nextPage(){
+	  return this.next;
+  }
+  get previousPage(){
+	  return this.previous;
   }
   getRequest(theUrl, callback){
 	let xmlHttp = new XMLHttpRequest();

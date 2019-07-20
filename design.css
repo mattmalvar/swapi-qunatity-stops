@@ -42,3 +42,19 @@ input{
 	border-bottom: 1px solid #ababab;
 	background: #efefefdb;
 }
+.next{
+	width: 5%;
+    padding: 5px;
+    float: right;
+}
+.back{
+	width: 5%;
+    padding: 5px;
+    float: left;
+}
+.show{
+	display: block;
+}
+.hide{
+	display:none;
+}
