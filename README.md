@@ -15,4 +15,6 @@ O sistema é composto de 5 arquivos:
 
 **StarshipController.js** - Controlador das ações do sistema
 
+### Para execução, abra o arquivo index.html com um browser
+
 *Caso seja necessario trocar a origem dos dados, é preciso alterar o arquivo RequestService.js*
